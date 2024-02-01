@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+body {
+  scroll-behavior: smooth;
+  background-color: #561C24;
+}
+
+* {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --default-text-color: black;
+  --inverted-default-text-color: white;
+  --key-texts-color: #2e7d32;
+  --stylized-font-family: 'Open Sans', sans-serif;
+}
+
+@keyframes popUpAnim {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes disappear {
+  to {
+    opacity: 0;
+    max-height: 0;
+  }
+}
+
+.splash {
+  animation: disappear 1.0s ease-in-out forwards;
+  animation-delay: 6.0s;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden; /* Necessary for max-height to work */
+  background-color: white;
+}
+
+.pop-up {
+  animation: popUpAnim 1.3s ease-in-out 0s forwards, fadeOut 1.4s ease-in-out 0s forwards;
+  margin-bottom: -40px;
+  opacity: 0;
+  font-size: 7.0rem;
+  font-weight: 800;
+  color: white;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #000000;
+}
+
+.pop-up:nth-child(1) {
+  animation-delay: 1.0s;
+}
+
+.pop-up:nth-child(2) {
+  animation-delay: 1.1s;
+}
+
+.pop-up:nth-child(3) {
+  animation-delay: 1.2s;
+}
+
+.pop-up-sp {
+  animation: popUpAnim 1.0s ease-in-out 2.0s forwards, fadeOut 4.4s ease-in-out 3s forwards;
+  margin-bottom: -40px;
+  opacity: 0;
+  font-size: 9.0rem;
+  font-weight: 800;
+  color: #0A1D56;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #0A1D56;
+  position: absolute;
+  z-index: 0;
+}
+
+.pop-up:nth-child(4) {
+  animation-delay: 1.3s;
+}
+
+.pop-up:nth-child(5) {
+  animation-delay: 1.4s;
+}
+
+.pop-up:nth-child(6) {
+  animation-delay: 1.5s;
+}
+
+.pop-up:nth-child(7) {
+  animation-delay: 1.6s;
+}
