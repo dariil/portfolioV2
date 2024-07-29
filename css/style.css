@@ -386,9 +386,9 @@ li a {
   flex-wrap: wrap;
   justify-content: space-evenly;
   /* margin: 50px auto auto auto; */
-  width: 70%;
+  width: 100%;
   height: auto;
-  padding: 30px;
+  /* padding: 30px; */
 }
 
 .cert-cards{
